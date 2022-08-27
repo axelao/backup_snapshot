@@ -1,0 +1,6 @@
+
+[linuxbckp]
+        path = /mnt/Backup
+;       writeable = no
+;       browseable = yes
+        guest ok = yes
