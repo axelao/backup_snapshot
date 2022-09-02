@@ -11,8 +11,8 @@ sudo apt-get remove -y docker docker-engine docker.io containerd runc
 
 #2 - Set up the repository
 echo "Set up the repository"
-sudo aptitude update
-sudo aptitude install -y \
+sudo apt update
+sudo apt install -y \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -31,8 +31,8 @@ echo \
 
 #5 - Install Docker Engine
 echo "Install Docker Engine"
-sudo aptitude update
-sudo aptitude install -y docker-ce docker-ce-cli containerd.io 
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io 
 
 #6 - Test the installation
 echo "Test the installation"
