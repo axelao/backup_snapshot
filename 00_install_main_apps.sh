@@ -14,7 +14,7 @@ sudo apt install -y \
     curl dfc git
 
 echo "Add conf on smb.conf"
-sudo cat conf/samba.txt >> /etc/samba/smb.conf
+sudo su -c 'cat conf/samba.txt >> /etc/samba/smb.conf'
 sudo systemctl stop smbd
 sudo systemctl start smbd
 
