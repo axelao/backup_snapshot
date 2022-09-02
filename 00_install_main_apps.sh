@@ -19,7 +19,7 @@ sudo systemctl stop smbd
 sudo systemctl start smbd
 
 echo "Change configfile SSH"
-sudo mv conf/sshd_config /etc/ssh/
+sudo cp conf/sshd_config /etc/ssh/
 sudo systemctl restart ssh
 
 echo "Create dir on /mnt"
