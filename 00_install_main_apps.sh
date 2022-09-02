@@ -11,7 +11,7 @@ sudo apt install -y \
     nmap vim tcpdump iftop htop \
     samba samba-common samba-common-bin \
     cifs-utils ntfs-3g lshw \
-    curl dfc
+    curl dfc git
 
 echo "Add conf on smb.conf"
 sudo cat conf/samba.txt >> /etc/samba/smb.conf
